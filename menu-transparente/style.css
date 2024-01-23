@@ -5,6 +5,22 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*
+box-sizing --> A propriedade CSS define como a largura e altura totais de um elemento são calculadas
+Por padrão, no modelo de caixa CSS , o widthe que heightvocê atribui a um elemento é 
+aplicado apenas à caixa de conteúdo do elemento. Se o elemento tiver alguma borda ou 
+preenchimento, ele será adicionado ao widthe heightpara chegar ao tamanho da caixa 
+renderizada na tela. Isso significa que quando você define widthe height, você deve 
+ajustar o valor fornecido para permitir qualquer borda ou preenchimento que possa ser adicionado.
+
+border-box --> informa ao navegador para levar em conta qualquer borda e preenchimento nos 
+valores que você especifica para a largura e altura de um elemento. Se você definir a largura 
+de um elemento como 100 pixels, esses 100 pixels incluirão qualquer borda ou preenchimento 
+adicionado, e a caixa de conteúdo diminuirá para absorver essa largura extra.
+
+
+*/
+
 html{
     height: 500vh;
 }
@@ -14,11 +30,27 @@ html{
     margin: auto;
 }
 
+/*
+margin: auto; --> Significa que o browser dará uma margem automática para todos os lados.
+
+*/
+
 .flex{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/*
+display: flex --> Torna o elemento um flex container automaticamente transformando 
+todos os seus filhos diretos em flex itens.
+
+justify-content --> Alinha os itens flex no container de acordo com a direção
+justify-content: space-between --> Cria um espaçamento igual entre os elementos. 
+Mantendo o primeiro grudado no início e o último no final.
+
+
+*/
 
 header{
     width: 100%;
@@ -46,6 +78,16 @@ header ul li{
     margin: 0 40px;
 }
 
+/*
+block --> Posiciona o elemento como se ele fosse um elemento de bloco, ocupando 
+todo o espaço possível. É o padrão de elementos como div e p.
+
+iline --> Posiciona o elemento fazendo-o ocupar o menor espaço possível.
+
+Inline-block --> Posiciona combinando as propriedade dos display block e inline.
+
+*/
+
 header ul li a{
     color: #fff;
     text-decoration: none;
@@ -60,6 +102,18 @@ header ul li a{
     cursor: pointer;
     transition: .2S;
 }
+
+/*
+cursor: pointer; --> para define o cursor do mouse em um button, quando o 
+ponteiro do mouse está sobre um elemento
+
+transition: .2S; --> As transições CSS permitem alterar os valores das propriedades
+ sem problemas, durante um determinado período.
+ Para criar um efeito de transição, você deve especificar duas coisas:
+
+a propriedade CSS à qual deseja adicionar um efeito
+a duração do efeito
+*/
 
 .banner{
     height: 100vh; /* altura da section*/
