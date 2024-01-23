@@ -23,7 +23,14 @@ html{
 header{
     width: 100%;
     padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
+/*
+position: fixed; --> é posicionado em relação à janela de visualização, o que significa que ele 
+permanece sempre no mesmo lugar mesmo se a página for rolada
+*/
 
 header i{
     font-size: 30px;
@@ -44,11 +51,32 @@ header ul li a{
     text-decoration: none;
 }
 
-
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #fe775a;
+    color: #fff;
+    cursor: pointer;
+    transition: .2S;
+}
 
 .banner{
+    height: 100vh; /* altura da section*/
     background-image: url(img/banner.jpg);
-    background-position: center;
+    background-position: 100% 0;
     background-repeat: no-repeat;
-    background-size: cover; /* ocupar todo o espaço*/
+    background-size: cover; /* cubra todo o espaço do banner*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 4em;
+}
+
+.banner h1 span{
+    color: #FFAE81;
 }
