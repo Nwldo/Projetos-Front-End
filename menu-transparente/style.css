@@ -58,11 +58,22 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    transition: .5s;
 }
+
 /*
 position: fixed; --> é posicionado em relação à janela de visualização, o que significa que ele 
 permanece sempre no mesmo lugar mesmo se a página for rolada
 */
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #fe775a;
+}
 
 header i{
     font-size: 30px;
