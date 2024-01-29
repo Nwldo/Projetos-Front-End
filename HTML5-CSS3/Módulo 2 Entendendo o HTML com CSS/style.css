@@ -1,0 +1,35 @@
+body {
+    margin: 0px; 
+}
+/*
+zera os espaços dos elementos
+*/
+
+.exemplo {
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+/*
+padding, margin, border --> com só um valor, aplicado em todos os sentidos (sentido horário),
+            com dois valores, (top, bottom) (right, left)...
+
+*/
+
+.exemplo1 {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+/*
+width: 100%; toda largura da página
+width: auto; espande quando puder expadir
+no caso da div tanto fazer colocar width porque tem como caracterisca pegar toda largura da tela
+*/
+
+img {
+    width: auto;
+}
+
