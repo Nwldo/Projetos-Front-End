@@ -1,0 +1,24 @@
+
+
+p {
+    color: chocolate;
+    font-size: 15px;
+    /*font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0px; /*espaçamento entre letras*/
+    word-spacing: 0; /*espaçamento entre palavras*/
+    line-height: 20px; /*altura da linha*/
+    text-shadow: 0px 2px 3px #f00; /*sombra no texto*/
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
