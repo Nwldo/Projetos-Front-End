@@ -27,9 +27,26 @@ padding, margin, border --> com só um valor, aplicado em todos os sentidos (sen
 width: 100%; toda largura da página
 width: auto; espande quando puder expadir
 no caso da div tanto fazer colocar width porque tem como caracterisca pegar toda largura da tela
-*/
 
+já outro elementos o "auto" vai pegar o tamanho normal da imagem por exemplo, é mesma coisa de não definir nada
+*/
 img {
     width: auto;
 }
 
+.link {
+    color: green;
+    font-size: 30px;
+}
+
+/*
+Estado do link --> passar o mouse no link
+*/
+
+.link:hover {
+    color: brown;
+}
+
+.link:visited {
+    color: pink;
+}
