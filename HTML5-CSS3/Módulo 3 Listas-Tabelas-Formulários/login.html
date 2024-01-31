@@ -34,7 +34,67 @@
     -->
 
     <h2>Área de login</h2>
-    <form></form>
-    
+    <form action="index.html" method="get">
+        
+        <select name="order">
+            <option></option>
+            <!--se não espcificar value será enviado o texto-->
+            <option value="bestseller">Mais vendidos</option>
+            <option value="last" selected>Recentes</option>
+        </select>
+
+        <input type="submit" value="Fazer cadastro">
+    </form>
+
+    <h1>Sselecionar mais de uma opção</h1>
+  
+    <form action="index.html" method="get">
+        <select name="order" size="2" multiple>
+            <option value="bestseller">Mais vendidos</option>
+            <option value="last">Recentes</option>
+
+            <input type="submit" value="Fazer cadastro">
+        </select>
+    </form>
+
+
+    <h1>Tipos de inputs</h1>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname">
+        <br><br>
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor">
+        <input type="number">
+        <input type="datetime-local">
+        <input type="date">
+        <textarea name="descrição"></textarea>
+      </form>
+      <button>texto do botão</button>
+
+
+      <!--Label - usado para selecionar um campo-->
+      <br><br><br>
+      <label for="nome">Nome Completo</label>
+      <input type="text" name="nome" id="nome">
+
+      <br><br>
+
+      <input type="checkbox" name="nome" id="teste">
+      <label for="teste">Eu declaro que li e aceito os termos de uso</label>
+      
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
