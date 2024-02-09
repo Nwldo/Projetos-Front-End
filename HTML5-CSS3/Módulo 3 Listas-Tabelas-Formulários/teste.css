@@ -23,10 +23,31 @@
     margin: 5px;
   }
 
+  /*
+retirar o foto do input: outline: 0;
+*/
+
   textarea{
     height: 200px;
     resize: none;
   }
-/*
-retirar o foto do input: outline: 0;
-*/
+
+.termosLinks{
+  color: #000;
+  text-decoration: none;
+}
+
+.termosLinks:hover{
+  text-decoration: underline;
+}
+
+button{
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+button:hover{
+  background-color: #ddd;
+}

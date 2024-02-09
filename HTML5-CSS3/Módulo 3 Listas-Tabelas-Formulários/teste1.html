@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./teste1.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="POST">
+
+        <fieldset><!--O elemento HTML é usado para agrupar elementos-->
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro Nome:<br>
+                <input type="text" name="name" required minlength="2" maxlength="5"><!--#17: Validações Nativas 1 / tamanho de textos suportados-->
+            </label><br>
+
+            <label>
+                Sobrenome:<br>
+                <input type="text" name="lastname" required minlength="2">
+            </label><br>
+
+            <label>
+                Idade:<br>
+                <input type="number" name="age" step="2" min="18" max="120"><!--step valores propocionais 2 em 2 e obrigatório-->
+            </label><br>
+
+            <label>
+                Data:<br>
+                <input type="date" name="data" min="2024-02-09"><!--data minima-->
+            </label><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa:<br>
+                <input type="text" name="companyname">
+            </label><br>
+
+            <label>
+                Cargo na empresa:<br>
+                <input type="text" name="companyjobtitle">
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar">
+
+
+    </form>
+    
+</body>
+</html>
