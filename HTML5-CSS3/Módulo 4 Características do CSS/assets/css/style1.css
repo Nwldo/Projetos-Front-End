@@ -1,0 +1,73 @@
+/*
+.box{
+    font-size: 20px;
+}
+.box-interno{
+    width: 10em;
+    height: 10em;
+    background-color: #999;
+}
+
+A medida em se baseada na medida font-seze do elemento pai
+Então 1em corresponde a 20px
+
+É um processo em cascata
+*/
+
+body{
+    font-size: 20px;
+}
+h1{
+    font-size: 3em;
+}
+.box{
+    font-size: 2em;
+}
+.box-interno{
+    width: 10em;
+    height: 10em;
+    background-color: #999;
+}
+/*
+A medida em pega a medido do elemento superior imediato
+.box-interno basea-se no .box
+
+
+
+===============================================
+A medida "rem" se basea no primeiro elemento
+por exemplo o html
+todos os elementos que especificar essa medida será aplicada (é como um zoo)
+
+html se não expecificado por padrão é de 16px
+html{
+    font-size: 10px
+}
+h1{
+    font-size: 3rem; --> vai ter 30
+}
+.box{
+    font-size: 2rem; --> vai ter 20
+}
+.box-interno{
+    width: 10rem;
+    height: 10rem;
+    background-color: #999;
+}
+*/
+
+
+/*
+================ #6: Unidades de medida relativas (fonte) ===================
+porcentagem usada para estruturas
+*/
+.box-1{
+    width: 50%; /*vai ter 50% do espaço disponível que ele tem (obs.: não da tela sempre)*/
+    height: 400px;
+    background-color: #999;
+}
+.box-interno-1{
+    width: 50%;/*vai ter 50% do espaço disponível que ele tem que no caso o espaço da div pai (box-1)*/
+    height: 50%;
+    background-color: #333;
+}

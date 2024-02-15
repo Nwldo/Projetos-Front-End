@@ -8,7 +8,8 @@
 </head>
 <body>
 
-    <form action="POST">
+    <form action="POS" enctype="multipart/form-data"><!--enctype para arquivos-->
+        <input type="hidden" name="country" value="JP"> <!--Esse campo type=hidden não aparece, mas envia a informação-->
 
         <fieldset><!--O elemento HTML é usado para agrupar elementos-->
             <legend>Dados Pessoais</legend>
@@ -23,6 +24,11 @@
             </label><br>
 
             <label>
+                E-mail:<br>
+                <input type="email" name="email" pattern="(^[a-zA-Z0-9-_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$)" title="endereço de e-mail">
+            </label><br>
+
+            <label>
                 Idade:<br>
                 <input type="number" name="age" step="2" min="18" max="120"><!--step valores propocionais 2 em 2 e obrigatório-->
             </label><br>
@@ -30,6 +36,12 @@
             <label>
                 Data:<br>
                 <input type="date" name="data" min="2024-02-09"><!--data minima-->
+            </label><br>
+
+            <label>
+                Foto:<br>
+                <input type="file" name="foto" accept="image/*"><!--adicinar só imagens-->
+                <!--ou accept="application/pdf"-->
             </label><br>
 
         </fieldset>

@@ -1,0 +1,75 @@
+body{
+    margin: 10px; 
+}
+
+/*
+====== Herança ================
+ margin --> só será aplicada no body
+
+o que tiver dentro do container vai herdar as propriedades do pai
+mas têm propriedades que não são herdadas: border --> propriedade de estrutura
+
+específico
+*/
+.container{
+    width: calc(100% - 20px);
+    height: 200px;
+    background-color: #ccc;
+
+    color: #f00;
+    font-size: 30px;
+}
+/*
+propriedade de texto
+
+.container strong{
+    border: solid #000;
+}
+
+body .container{
+    color: #0f0;
+}
+*/
+
+/*
+========= #2: Especificidade ============
+o css funciona de cima para baixo, ou seja, a ultima propriedade será aplicado
+
+
+Outro exemplo: verifique se fica azul?
+mesmo sendo a última propriedade será aplicado a mais expecífica do que a geral
+
+geral
+*/
+div{
+    color: #00ff;
+}
+
+/*
+=================== #3: Cascata ======================
+aplicação do css
+1º - arquivo externo
+2º - style no cabeçalho
+3º -  prática de usar CSS dentro de elementos HTML. Através do "CSS inline"
+
+a propriedade que será aplicada será dentro do elemento HTML
+*/
+
+
+/*
+============== #4: Unidades de medida absoluta ===================================
+A unidade de medida px (absoluta) não sofre interferêcia de outras medidas
+A unidade de medida pt (absoluta) --> para fontes
+
+A unidade de medida in (polegadas) (absoluta)
+
+A unidade de medida cm (absoluta)
+
+
+============== #5: Unidades de medida relativas (fonte) =========================
+A unidade de medida em -- usadas em sites responsivos
+
+
+
+
+*/
